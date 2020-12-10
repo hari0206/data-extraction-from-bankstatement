@@ -1,0 +1,52 @@
+{
+    "banks":[
+        {
+            "name":"hdfc",
+            "header":{
+                "Date":"Date",
+                "Narration":"Narration",
+                "Chq./Ref.No.":"Chq./Ref.No.",
+                "Value Dt":"Value Dt",
+                "Withdrawal Amt.":"Withdrawal Amt.",
+                "Deposit Amt.":"Deposit Amt.",
+                "Closing Balance":"Closing Balance"
+            }
+        },
+        {
+            "name":"dbs",
+            "header":{
+                "Date":"Date",
+                "Narration":"Transaction",
+                "Chq./Ref.No.":"",
+                "Value Dt":"",
+                "Withdrawal Amt.":"Debit",
+                "Deposit Amt.":"Credit",
+                "Closing Balance":""
+            }
+        },
+        {
+            "name":"kotak",
+            "header":{
+                "Date":"Date",
+                "Narration":"Narration",
+                "Chq./Ref.No.":"Chq/Ref No.",
+                "Value Dt":"",
+                "Withdrawal Amt.":"Withdrawal (Dr)",
+                "Deposit Amt.":"Deposit (Cr)",
+                "Closing Balance":"Balance"
+            }
+        },
+        {
+            "name":"sbi",
+            "header":{
+                "Date":"Txn Date",
+                "Value Dt":"Value Date",
+                "Narration":"Description",
+                "Chq./Ref.No.":"Ref No./Cheque No.",
+                "Withdrawal Amt.":"Debit",
+                "Deposit Amt.":"Credit",
+                "Closing Balance":"Balance"
+            }
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form action="/getresults" method="POST" enctype="multipart/form-data">
+  
+        <h1><strong>Bank Statement</strong> Extractor</h1>
+        
+        
+          <div class="form-group">
+            <label for="caption">Bank <span>Please select your bank</span></label>
+            <select name="bank"  name="title" id="title" class="form-controll">
+              <option value="hdfc" style="color: black;">HDFC</option>
+              <option value="dbs" style="color: black;">DBS</option>
+              <option value="sbi" style="color: black;">SBI</option>
+              <option value="kotak" style="color: black;">KOTAK</option>
+            </select>
+          </div>
+       
+        
+        <div class="form-group file-area">
+              <label for="images">Images <span>Your file should be excel</span></label>
+          <input type="file" name="images" id="images" required="required" />
+          <div class="file-dummy">
+            <div class="success">Great, your file is selected. Keep on.</div>
+            <div class="default">Please select bank statement</div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <button type="submit">submit</button>
+        </div>
+        
+      </form>
+
+      
+      
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
