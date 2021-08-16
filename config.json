@@ -50,29 +50,27 @@
         {
             "name": "indian",
             "header": {
-                "Value Dt": "Value",
-                "Date": "Post",
-                "Remitter": "Remitter",
+                "Value Dt": "Value Date",
+                "Date": "Post Date",
+                "Remitter": "Remitter Branch",
                 "Narration": "Description",
-                "Chq./Ref.No.": "Chequ",
-                "Withdrawal Amt.": "DR",
-                "Deposit Amt.": "CR",
+                "Chq./Ref.No.": "Cheque No.",
+                "Withdrawal Amt.": "Debit Amount",
+                "Deposit Amt.": "Credit Amount",
                 "Closing Balance": "Balance"
             }
         },
         {
             "name": "icici",
             "header": {
-                "Sr No.": "No.",
-                "Transaction Id": "Transaction ID",
+                "Sr No.": "S No.",
                 "Value Dt": "Value Date",
-                "Date": "Txn Posted Date",
-                "Chq./Ref.No.": "ChequeNo.",
-                "Narration": "Description",
-                "Withdrawal Amt.": "",
-                "Deposit Amt.": "Cr/Dr",
-                "Closing Balance": "Transaction Amount(INR)",
-                "Balance": "Available Balance(INR)"
+                "Date": "Transaction Date",
+                "Chq./Ref.No.": "Cheque Number",
+                "Narration": "Transaction Remarks",
+                "Withdrawal Amt.": "Withdrawal Amount (INR )",
+                "Deposit Amt.": "Deposit Amount (INR )",
+                "Balance": "Balance (INR )"
             }
         },
         {
@@ -86,6 +84,32 @@
                 "Deposit Amt.": "Credit Amount",
                 "Closing Balance": "Balance",
                 "Value Dt": "Value Date"
+            }
+        },
+        {
+            "name": "canara",
+            "header": {
+                "Date": "Transaction Date",
+                "Value Date": "Value Date",
+                "Chq./Ref.No.": "Cheque No.",
+                "Narration": "Description",
+                "Branch Code": "Branch Code",
+                "Withdrawal Amt.": "Debit",
+                "Deposit Amt.": "Credit",
+                "Closing Balance": "Balance"
+            }
+        },
+        {
+            "name": "axis",
+            "header": {
+                "Date": "Tran Date",
+                "Value Date": "Value Date",
+                "Chq./Ref.No.": "CHQNO",
+                "Narration": "Transaction Particulars",
+                "Withdrawal Amt.": "Amount(null)",
+                "Deposit Amt.": "DR|CR",
+                "Closing Balance": "Balance(null)",
+                "Branch Name": "Branch Name"
             }
         }
     ]

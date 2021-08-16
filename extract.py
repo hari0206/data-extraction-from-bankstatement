@@ -53,6 +53,7 @@ def match_headers(headers, data):
     header_list = [
         header for header in header_list_bank if len(header.strip()) > 0]
     for index, values in enumerate(data):
+        values = [ele.strip() for ele in values if type(ele) == str]
         if values == header_list:
             return index
 
@@ -129,6 +130,7 @@ def extract_data(bank_name, statement_path):
     df = pd.DataFrame(data)
     df.columns = data[0]
     df = df[1:]
+    print(df)
     json_data = df.to_json(orient='table', index=False)
     json_data = json.loads(json_data)
     for x in json_data["data"]:
@@ -145,16 +147,22 @@ def extract_data(bank_name, statement_path):
     return json_data['data']
 
 
-# statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\data-extraction-from-bankstatement\statements\sbi_statement.xlsx"
-# bank_name = "SBI"
+statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\data-extraction-from-bankstatement\statements\sbi_statement.xlsx"
+bank_name = "SBI"
 # statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\Bank Statements\hdfc_statement.xls"
 # bank_name = "hdfc"
-# statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\py-scripts\StatementOfAccount_50355157626_12082021_162754_20210812-180040.xlsx"
+# statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\Bank Statements\Indian Bank.xls"
 # bank_name = "indian"
 # statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\Bank Statements\CWS-Bank Of Baroda.xlsx"
 # bank_name = "bankofbaroda"
-statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\Bank Statements\ICICIOpTransactionHistory13-08-2021.xls"
-bank_name = "icici"
+# statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\Bank Statements\ICICIOpTransactionHistory13-08-2021.xls"
+# bank_name = "icici"
+# statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\Bank Statements\CWS-Canara Bank.xlsx"
+# bank_name = "canara"
+# statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\Bank Statements\dbs_statement.xls"
+# bank_name = "dbs"
+# statement_path = r"C:\Users\lenovo\OneDrive - BOT Mantra\Desktop\Bank Statements\CWS-AXIS.xlsx"
+# bank_name = "axis"
 
 
 print(extract_data(bank_name,statement_path))
